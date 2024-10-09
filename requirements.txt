@@ -1,0 +1,5 @@
+transformers
+torch
+flask
+sentencepiece
+numpy==1.23.5
