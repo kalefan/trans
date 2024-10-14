@@ -7,8 +7,8 @@ MODEL_DIR = './models'
 os.makedirs(MODEL_DIR, exist_ok=True)  # 创建目录如果不存在
 
 # 加载预训练的MT0模型和分词器
-tokenizer = MarianTokenizer.from_pretrained("./models/models--Helsinki-NLP--opus-mt-zh-en/snapshots/cf109095479db38d6df799875e34039d4938aaa6")
-model = MarianMTModel.from_pretrained("./models/models--Helsinki-NLP--opus-mt-zh-en/snapshots/cf109095479db38d6df799875e34039d4938aaa6")
+tokenizer = MarianTokenizer.from_pretrained("/work/project/models/model/snapshots/cf109095479db38d6df799875e34039d4938aaa6"")
+model = MarianMTModel.from_pretrained("/work/project/models/model/snapshots/cf109095479db38d6df799875e34039d4938aaa6"")
 
 app = Flask(__name__)
 
